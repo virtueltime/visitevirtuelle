@@ -1,0 +1,28 @@
+<html>
+<head>
+<script>
+var show=function(t){t.style.display="block"},hide=function(t){t.style.display="none"},toggle=function(t){"block"!==window.getComputedStyle(t).display?show(t):hide(t)};document.addEventListener("click",function(t){if(t.target.classList.contains("toggle")){t.preventDefault();var e=document.querySelector(t.target.hash);e&&toggle(e)}},!1);
+</script>
+</head>
+<body>
+
+<p>
+  <a class="toggle" href="#example1">Toggle Div</a>
+</p>
+
+<div class="toggle-content" id="example1" style="display:none;">
+  Here's some text we want to toggle visibility of. Let's do it!
+</div>
+
+
+<p>
+  <a class="toggle" href="#example2">Toggle Div</a>
+</p>
+
+<div class="toggle-content" id="example2" style="display:none;">
+  Here's some text we want to toggle visibility of. Let's do it!
+</div>
+
+
+</body>
+</html>
